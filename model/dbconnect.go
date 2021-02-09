@@ -13,7 +13,7 @@ var con *sql.DB
 //DBinstance is
 func DBinstance() *sql.DB {
 
-	db, err := sql.Open("mysql", "root:1234@/himanshu")
+	db, err := sql.Open("mysql", "root:<root_password>@/<database_name>")
 
 	if err != nil {
 		panic(err)
